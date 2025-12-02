@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Khamsa | Collection</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">KHA<span>MSA </span></div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html" style="color:var(--accent)">Collection</a></li>
+            <li><a href="about.html">Journal</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="cart-icon" onclick="toggleCart()">
+            <i class="fas fa-shopping-bag"></i>
+            <span class="cart-count">0</span>
+        </div>
+    </nav>
+
+    <div class="cart-sidebar">
+        <div class="cart-header">
+            <h3>Shopping Bag</h3>
+            <span style="font-size:1.5rem; cursor:pointer;" onclick="toggleCart()">&times;</span>
+        </div>
+        <div class="cart-items"></div>
+        <div style="border-top:1px solid #eee; padding-top:20px;">
+            <div style="display:flex; justify-content:space-between; margin-bottom:20px;">
+                <span>Subtotal:</span>
+                <span id="cart-total-price">0.00Pkr</span>
+            </div>
+            <button class="btn" style="width:100%">Checkout</button>
+        </div>
+    </div>
+
+    <section class="section-padding">
+        <h2 class="fade-up" style="text-align:center; font-size: 3.5rem; margin-bottom: 20px;">Elegant Collections</h2>
+        
+        <div class="filters fade-up">
+            <button class="active" onclick="filterSelection('all')">All</button>
+            <button onclick="filterSelection('eastern')">Eastern Wear</button>
+            <button onclick="filterSelection('western')">Western Wear</button>
+        </div>
+
+        <div class="product-grid fade-up">
+            <div class="product-card eastern">
+                <div class="img-box">
+                    <img src="images\Pink Lilen Suit.jpg" alt="Beige Kurta">
+                </div>
+                <div class="info">
+                    <h3>Fancy Wear Set</h3>
+                    <span class="price">13000Pkr</span>
+                    <button class="btn-alt" style="padding:10px 20px;" onclick="addToCart('Fancy Wear Set', '13000Pkr', 'images/Pink Lilen Suit.jpg')">Add to Bag</button>
+                </div>
+            </div>
+
+            <div class="product-card western">
+                <div class="img-box">
+                    <img src="images\BLACK SHIRT.jpg" alt="Trench Coat">
+                </div>
+                <div class="info">
+                    <h3>The Black Cord</h3>
+                    <span class="price">8000Pkr</span>
+                    <button class="btn-alt" style="padding:10px 20px;" onclick="addToCart('The Black Cord', '8000Pkr', 'images/BLACK SHIRT.jpg')">Add to Bag</button>
+                </div>
+            </div>
+
+            <div class="product-card eastern">
+                <div class="img-box">
+                    <img src="images\RAW SILK SARI.jpg" alt="Silk Dress">
+                </div>
+                <div class="info">
+                    <h3>Raw Silk Sari</h3>
+                    <span class="price">180000Pkr</span>
+                    <button class="btn-alt" style="padding:10px 20px;" onclick="addToCart('Raw Silk Sari', '18000Pkr', 'images/RAW SILK SARI.jpg')">Add to Bag</button>
+                </div>
+            </div>
+
+            <div class="product-card western">
+                <div class="img-box">
+                    <img src="images\Western Black.jpg" alt="White Blouse">
+                </div>
+                <div class="info">
+                    <h3>Western Black</h3>
+                    <span class="price">150000Pkr</span>
+                    <button class="btn-alt" style="padding:10px 20px;" onclick="addToCart('Western Black', '15000Pkr', 'images/Western Black.jpg')">Add to Bag</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>KHA<span>MSA</span></h3>
+                <p>Curating a lifestyle of elegance, sophistication, and cultural harmony. Redefining the modern wardrobe since 2023.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Info</h4>
+                <p><i class="fas fa-map-marker-alt"></i> 102 M.M. Alam Road, Lahore</p>
+                <p><i class="fas fa-phone"></i> +92 300 123 4567</p>
+                <p><i class="fas fa-envelope"></i> info@khamsa.com</p>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2025 KHAMSA. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

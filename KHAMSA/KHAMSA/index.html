@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khamsa</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">KHA<span>MSA</span></div>
+        <ul class="nav-links">
+            <li><a href="index.html" style="color:var(--accent)">Home</a></li>
+            <li><a href="shop.html">Collection</a></li>
+            <li><a href="about.html">Journal</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="cart-icon" onclick="toggleCart()">
+            <i class="fas fa-shopping-bag" style="color:#555"></i>
+            <span class="cart-count">0</span>
+        </div>
+    </nav>
+
+    <!-- Sidebar Cart -->
+    <div class="cart-sidebar">
+        <div class="cart-header">
+            <h3 style="font-size:1.5rem;">Shopping Bag</h3>
+            <span style="font-size:1.5rem; cursor:pointer;" onclick="toggleCart()">&times;</span>
+        </div>
+        <div class="cart-items"></div>
+        <div style="margin-top:20px; border-top:1px solid #eee; padding-top:20px;">
+            <div style="display:flex; justify-content:space-between; margin-bottom:20px; font-weight:bold;">
+                <span>Subtotal:</span>
+                <span id="cart-total-price">0.00Pkr</span>
+            </div>
+            <button class="btn" style="width:100%">Checkout</button>
+        </div>
+    </div>
+
+    <!-- Hero -->
+    <header class="hero">
+        <div class="hero-content fade-up">
+            <h1><strong>Timeless </strong><br> <span><strong>Elegance</strong></span></h1>
+            <p><strong>Where Eastern heritage meets Western minimalism.</strong></p>
+            <a href="shop.html" class="btn" style="background:white; color:black; border:none;">View Collection</a>
+        </div>
+    </header>
+
+    <!-- Marquee -->
+    <div class="marquee">
+        <div class="marquee-content">
+            Sustainable Fashion &nbsp;&bull;&nbsp;  Premium Fabrics &nbsp;&bull;&nbsp;  Eastern Soul, Western Heart &nbsp;&bull;&nbsp; Free Shipping All Over Pakistan &nbsp;&bull;&nbsp; 
+            Sustainable Fashion &nbsp;&bull;&nbsp;  Premium Fabrics &nbsp;&bull;&nbsp;  Eastern Soul, Western Heart &nbsp;&bull;&nbsp; Free Shipping All Over Pakistan 
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>KHA<span>MSA</span></h3>
+                <p>Curating a lifestyle of elegance, sophistication, and cultural harmony. Redefining the modern wardrobe since 2023.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Info</h4>
+                <p><i class="fas fa-map-marker-alt"></i> 102 M.M. Alam Road, Lahore</p>
+                <p><i class="fas fa-phone"></i> +92 300 123 4567</p>
+                <p><i class="fas fa-envelope"></i> info@khamsa.com</p>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2025 KHAMSA. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
