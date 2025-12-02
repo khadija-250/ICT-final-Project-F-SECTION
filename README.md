@@ -1,5 +1,5 @@
 # ICT-final-Project-F-SECTION
-Khamsa – Clothing Website
+KHAMSA – Clothing Website
 
 **Project Overview**
 
